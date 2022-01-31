@@ -8,6 +8,7 @@ public class MainApp3 {
             for (int j = 0; j < table[i].length; j++) {
                 System.out.print(table[i][j]);
             }
+            System.out.println();
         }
         System.out.println();
     }
@@ -36,7 +37,7 @@ public class MainApp3 {
             } else {
                 return true;
             }
-        }
+        } return false;
     }
 
     public static void main(String[] args) {
@@ -56,10 +57,10 @@ public class MainApp3 {
         }
         System.out.println(Arrays.toString(arr));
 
-        int[] arr2 = new int[100]; // Задание 2 (при выводе в консоль выдает ошибку - нужен разбор)
+        int[] arr2 = new int[100]; // Задание 2
         arr2[i] = 0;
-        for (i = 1; i <= arr2.length; i++) {
-            arr2[i] = i;
+        for (i = 0; i < arr2.length; i++) {
+            arr2[i] = i + 1;
         }
         System.out.println(Arrays.toString(arr2));
 
@@ -79,7 +80,8 @@ public class MainApp3 {
             }
         } printArr(table);  //метод взят из методички, но печатает в строку вместо матрицы
 
-        System.out.println(newArray(7, 1)); //Задание 5 вывод в консоль
+        int [] array = newArray(7, 1); //Задание 5
+        System.out.println(Arrays.toString(array));
 
         int[] arr4 = {7, 55, 16, 8, 98, 2, 9, 32, 4, 5}; //Задание 6
         int min = arr4[0];
@@ -96,5 +98,6 @@ public class MainApp3 {
         } System.out.println(max);
 
         System.out.println(dotArray(arr5)); //Задание 7 вывод в консоль
+
     }
 }
