@@ -13,7 +13,7 @@ public class MainApp3 {
         System.out.println();
     }
 
-    public static int[] newArray(int len, int initialValue) { //Метод к заданию 5 (нужен разбор печатает "[I@1b6d3586" переменные в методе main)
+    public static int[] newArray(int len, int initialValue) { //Метод к заданию 5
         int[] array = new int[len];
         for (int i = 0; i < array.length; i++) {
             array[i] = initialValue;
@@ -78,7 +78,7 @@ public class MainApp3 {
                     table[i][j] = 1;
                 }
             }
-        } printArr(table);  //метод взят из методички, но печатает в строку вместо матрицы
+        } printArr(table);
 
         int [] array = newArray(7, 1); //Задание 5
         System.out.println(Arrays.toString(array));
