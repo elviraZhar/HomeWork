@@ -77,9 +77,9 @@ public class MainApp4 {
         diagonal2 = true;
 
         for (int i = 0; i < SIZE; i++) {
-            for (int j = SIZE - 1; j >= 0; j--) {
+            for (int j = 0; j < SIZE; j++) {
                 line = line & (map[i][j] == symb);
-                colomn = colomn & (map[i][j] == symb);
+                colomn = colomn & (map[j][i] == symb);
                 diagonal1 = diagonal1 & (map[i][j] == symb);
                 diagonal2 = diagonal2 & (map[i][SIZE - j - 1] == symb);
             }
